@@ -1,10 +1,3 @@
-# LFISuite: LFI Automatic Exploiter and Scanner
-# Author: D35m0nd142, <d35m0nd142@gmail.com>
-# Twitter: @D35m0nd142
-# Python version: 2.7
-# Tutorial Video: https://www.youtube.com/watch?v=6sY1Skx8MBc
-# Github Repository: https://github.com/D35m0nd142/LFISuite
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
@@ -25,7 +18,7 @@ def solve_dependencies(module_name,download_url=None):
 		from pipper import pip_install_module
 	except:
 		print "[!] pipper not found in the current directory.. Downloading pipper.."
-		download("https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pipper.py","pipper.py")
+		download("https://raw.githubusercontent.com/risacker/LFISuite/master/pipper.py","pipper.py")
 		from pipper import pip_install_module
 
 	if(download_url is not None):
@@ -55,7 +48,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 try:
 	import socks
 except:
-	solve_dependencies("socks.py","https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/socks.py")
+	solve_dependencies("socks.py","https://raw.githubusercontent.com/risacker/LFISuite/master/socks.py")
 	import socks
 
 import threading
@@ -67,7 +60,7 @@ except:
 	solve_dependencies("termcolor")
 	from termcolor import colored
 
-netcat_url = "https://github.com/D35m0nd142/LFISuite/raw/master/nc.exe"
+netcat_url = "https://github.com/risacker/LFISuite/raw/master/nc.exe"
 LFS_VERSION = '1.13' # DO NOT MODIFY THIS FOR ANY REASON!!
 
 #--------- Auto-Hack Global Variables ----------#
@@ -185,12 +178,12 @@ def banner():
 	print "| Modules: AUTO-HACK, /self/environ, /self/fd, phpinfo, php://input,        |"
 	print "|          data://, expect://, php://filter, access logs                    |"
 	print "|                                                                           |"
-	print "| Author: D35m0nd142, <d35m0nd142@gmail.com> https://twitter.com/d35m0nd142 |"
+	print "| Author: risacker                                                          |"
 	print "\*-------------------------------------------------------------------------*/\n"
 
 
 def check_for_update():
-	lfisuite_github_url = "https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/lfisuite.py"
+	lfisuite_github_url = "https://raw.githubusercontent.com/risacker/LFISuite/master/lfisuite.py"
 	keyword = "LFS_VERSION = '"
 	updated = False
 	print "\n[*] Checking for LFISuite updates.."
@@ -213,7 +206,7 @@ def check_for_update():
 			print "[+] New LFISuite version found. Updating.."
 			download(lfisuite_github_url,sys.argv[0])
 			print colored("\n[+] LFISuite updated to version %s" %currversion,"red")
-			print "[i] Visit https://github.com/D35m0nd142/LFISuite/blob/master/CHANGELOG.md for details"
+			print "[i] Visit https://github.com/risacker/LFISuite/blob/master/CHANGELOG.md for details"
 			time.sleep(2)
 			os.system("%s %s" %(sys.executable,sys.argv[0]))
 		else:
