@@ -4,6 +4,35 @@
 
 LFISuite is an open source local file inclusion scanner and exploiter that is coded in Python. It supports multiple attack points and also has TOR proxy support. We all know that Local File Inclusion (also known as LFI) is a process of “including” locally present files, through the exploitation of vulnerable inclusion procedures implemented in the application that accepts un-sanitized input.LFI Suite is a totally automatic tool able to scan and exploit Local File Inclusion vulnerabilities using many different methods of attack.
 
+# Steps to be Followed to run LFISuite in your Machine:-
+Step 1: "Download"
+
+         Use command in terminal: git clone https://github.com/D35m0nd142/LFISuite
+         
+Step 2: Go to Folder
+
+         Use command in terminal: cd LFISuite
+         
+Step 3: Check execute permission for lfisuite.py
+
+         Use command in terminal: ls -la
+         
+Step 4: If permission is not given then grant permission for lfisuite.py
+
+         Use command in terminal: chmod +x lfisuite.py
+         
+Step 5: Check  again the execute permission for lfisuite.py
+
+         Use command in terminal: ls -la 
+         
+Step 6: Run the tool
+
+         Use command in terminal: python lfisuite.py
+         
+<i>If tool is running good then choose the target and scan else create virtual environment</i>
+        
+        
+        
 # Output
 ![alt tag](https://telegra.ph/file/65786a01fdb870f6e52b8.png)
 
