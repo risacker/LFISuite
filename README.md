@@ -60,9 +60,9 @@ Vulnerable points are identified!!!!!
 
 <h3> Features </h3>
 
-* Works with Windows, Linux and OS X
-* Automatic Configuration 
-* Automatic Update
+* Works with Windows, Linux and OS X.
+* Automatic Configuration.
+* Automatic Update.
 * Provides 8 different Local File Inclusion attack modalities:
   - /proc/self/environ
   - php://filter
@@ -74,8 +74,8 @@ Vulnerable points are identified!!!!!
   - expect://
 
 * Provides a ninth modality, called <b>Auto-Hack</b>, which scans and exploits the target automatically by trying all the attacks one after the other without you having to do anything (except for providing, at the beginning, a list of paths to scan, which if you don't have you can find in this project directory in two versions, small and huge). 
-* Tor proxy support
-* Reverse Shell for Windows, Linux and OS X
+* Tor proxy support.
+* Reverse Shell for Windows, Linux and OS X.
 
 
 <h3> How to use it? </h3>
